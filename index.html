@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculo de Bombons</title>
+  <style>
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px;
+    }
+    body{
+      background-color: rgb(202, 37, 37);
+      text-align: center;
+    } 
+.image-box {
+max-width: 600px;
+margin: 40px auto;
+padding: 20px;
+border: 3px solid rgb(0, 0, 0);
+border-radius: 10px;
+box-sizing: border-box;
+text-align: left;
+}
+
+.image-box img {
+max-width: 100%;
+max-height: 800px;
+border-radius: 5px;
+}
+    .image-box img {
+max-width: 100%;
+max-height: 800px; 
+border-radius: 5px;
+}
+  </style>
+
+  <script>
+    function calcularBombons() {
+      var quantidadeAlunos = parseInt(document.getElementById("quantidadeAlunos").value);
+      var totalBombons = quantidadeAlunos * 3; // Cada aluno recebe 2 bombons e o professor recebe 1.
+
+      document.getElementById("resultado").innerHTML = "Total de bombons a serem comprados: " + totalBombons;
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculo de Bombons</h1>
+  <label for="quantidadeAlunos">Quantidade de Alunos:</label>
+  <input type="number" id="quantidadeAlunos" min="0">
+  <button onclick="calcularBombons()">Calcular</button>
+  <p id="resultado"></p>
+
+  <form>
+   <label>
+    <div class="image-box">
+        algoritmo "Bombons" <br>
+        var<br>
+        quantidadeAluno, quantidadeProfessor, quantidadeBombom : inteiro <br>
+        inicio <br>
+        escreva("Digite a quantidade de alunos: ") <br>
+        leia(quantidadeAluno) <br>
+        quantidadeProfessor <- 1 <br>
+        quantidadeBombom <- (quantidadeAluno *2)+ quantidadeProfessor <br>
+        escreva("Precisa de",quantidadeBombom," bombons para essa turma.") <br>
+        fimalgoritmo
+
+    </div>
+    </label>
+    </form>
+
+  <div class="image-box">
+    <img src="pseudocódigo.PNG" alt="Visualg!">
+    </div>
+    <div class="image-box">
+    <img src="execução.PNG" alt="Algoritmo">
+    </div>
+     <div class="image-box" >
+     <img src="javascript.png"></div>
+</body>
+</html>
